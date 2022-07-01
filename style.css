@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,800;1,300;1,800&display=swap');
+
+:root {
+    --bgColor: #44e3ff;
+    --bgMainColor: #f5f5f5;
+    --textColor: rgb(37, 37, 37);
+    --taskBgColor: #c7c7c7;
+}
+
+body {
+    background-color: var(--bgColor);
+    font-family: 'Montserrat', sans-serif;
+    color: var(--textColor);
+}
+
+main#app {
+    margin: 24px auto;
+    max-width: 960px;
+    padding: 24px;
+    min-height: 250px;
+    background-color: aliceblue;
+    border-radius: 18px;
+    text-align: center;
+}
+
+hr {
+    width: 40%;
+}
+
+li {
+    width: 90%;
+    background-color: var(--taskBgColor);
+    margin: 8px;
+    padding: 8px;
+    text-align: left;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li div.texts {
+    flex-grow: 1;
+}
+
+li button {
+    width: 75px;
+    height: 30px;
+    margin: 4px;
+}
+
+button.delete {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 18px;
+    transition: 0.3s ease-in-out;
+}
+
+button.delete:hover {
+    border-radius: 8px;
+}
+
+button.done {
+    background-color: #006eff;
+    color: white;
+    border: none;
+    border-radius: 18px;
+    transition: 0.3s ease-in-out;
+}
+
+button.done:hover {
+    border-radius: 8px;
+}
+
+li h3 {
+    padding: 2px;
+    margin: 2px;
+}
+
+li p {
+    margin: 2px 2px 2px 18px;
+    padding: 2px;
+}
+
+.lineThrough {
+    text-decoration: line-through;
+}
+
+
+form {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+}
+
+form * {
+    margin: 4px;
+    padding: 4px;
+    border-radius: 8px;
+    border: none;
+}
+
+form input {
+    background-color: #e2e2e2;
+}
+
+form textarea {
+    resize: none;
+    height: 75px;
+    background-color: #e2e2e2;
+}
+
+
+button#addTask {
+    background-color: rgb(0, 196, 0);
+    font-weight: bold;
+    color: #FFF;
+}
