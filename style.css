@@ -124,3 +124,7 @@ button#addTask {
     font-weight: bold;
     color: #FFF;
 }
+
+[v-cloak] {
+    display: none
+}
